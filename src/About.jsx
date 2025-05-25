@@ -5,9 +5,9 @@ export default function About({ dark, setDark }) {
         <section id='about' className={`w-full h-[70vh] bg-cover bg-center px-5 sm:px-10 md:px-20 py-10 sm:py-20 border-b-2 border-yellow-300 transition-colors duration-500 ${dark ? 'bg-red-950' : 'bg-white'}`}>
             <h2 className={`${dark ? 'text-yellow-300' : 'text-red-600'} text-4xl mb-5 transition-colors duration-500`}> احنا مين</h2>
             <p className={`${dark ? 'text-white' : 'text-black'} md:text-[1.05rem] sm:text-[.7rem] leading-relaxed transition-colors duration-500`}>
-               احنا استوديو العاب متواضع اسمه <strong>تمره</strong> هدفنا ان احنا ننجح في صناعة الالعاب ونشره في الوطن العربي والعالم
+               احنا استوديو العاب متواضع اسمه <strong>تمره</strong> هدفنا ان احنا ننجح في صناعة الالعاب ونشرها في الوطن العربي والعالم
                <br /><br />
-               احنا برضو بنطمح ان احنا نعيد احياء فكرة وجود <strong>العاب عربي</strong>
+               احنا برضو بنطمح ان احنا نعيد احياء فكرة وجود <strong>العاب عربية</strong>
                <br /><br />
                طبعا <strong>الهدف الفرعي الحالي</strong> هو ان احنا نجيب عشر اعضاء معانا الفريق 
                <br /><br />
