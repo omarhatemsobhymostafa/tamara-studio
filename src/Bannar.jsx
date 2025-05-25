@@ -10,7 +10,7 @@ export default function Banner({ dark }) {
       style={{ backgroundImage: `url(${dark ? bannerImage2 : bannerImage})` }}
     >
       <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-snug lg:leading-[75px] w-full lg:w-3/5 text-wrap inline-block">
-        مرحبا بكم في موقع تمرة استوديو حيث ندمج البرمجة والألعاب
+      ازيكم احنا ستوديو العاب تمرة و احنا هنا بندمج البرجمة والالعاب
       </h2>
     </div>
   )

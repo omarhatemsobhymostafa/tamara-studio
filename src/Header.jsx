@@ -4,8 +4,8 @@ import Logo from './Images/logo.png';
 export default function Header({ dark, setDark, menuOpen, setMenuOpen }) {
   const links = [
     { label: 'الرئيسية', id: 'bannar' },
-    { label: 'من نحن', id: 'about' },
-    { label: 'مقاطعنا', id: 'videos' },
+    { label: ' احنا مين', id: 'about' },
+    { label: 'فيديوهتنا', id: 'videos' },
     { label: 'المشاريع البرمجية', id: 'projects' },
     { label: 'أعضاء تمرة', id: 'members' },
   ];

@@ -5,13 +5,13 @@ export default function About({ dark, setDark }) {
         <section id='about' className={`w-full h-[70vh] bg-cover bg-center px-5 sm:px-10 md:px-20 py-10 sm:py-20 border-b-2 border-yellow-300 transition-colors duration-500 ${dark ? 'bg-red-950' : 'bg-white'}`}>
             <h2 className={`${dark ? 'text-yellow-300' : 'text-red-600'} text-4xl mb-5 transition-colors duration-500`}>من نحن</h2>
             <p className={`${dark ? 'text-white' : 'text-black'} md:text-[1.05rem] sm:text-[.7rem] leading-relaxed transition-colors duration-500`}>
-                نحن <strong>استوديو ألعاب عربي ناشئ</strong>، نؤمن بأن الوقت قد حان لنهضة الألعاب العربية، ونسعى بكل شغف لأن نكون من أوائل من يضعون بصمة حقيقية في هذه الصناعة داخل الوطن العربي وخارجه.
-                <br /><br />
-                رؤيتنا تتجسد في إنتاج ألعاب عالية الجودة، تنبع من ثقافتنا، وتحمل هويتنا، وتنافس بقوة على الساحة العالمية.
-                <br /><br />
-                نحن لا نصنع ألعابًا فقط، بل نبني حلمًا، ونعيد إحياء فكرة أن تكون الألعاب العربية مصدر فخر وإلهام...
-                <br /><br />
-                إذا كنت تؤمن برسالتنا وتشعر بأنك قادر على ترك أثر، فلا تتردد في التقدم والانضمام إلينا.
+               احنا استوديو العاب متواضع اسمه <strong>تمره</strong> هدفنا ان احنا ننجح في صناعة الالعاب ونشره في الوطن العربي والعالم
+               <br /><br />
+               احنا برضو بنطمح ان احنا نعيد احياء فكرة وجود <strong>العاب عربي</strong>
+               <br /><br />
+               طبعا <strong>الهدف الفرعي الحالي</strong> هو ان احنا نجيب عشر اعضاء معانا الفريق 
+               <br /><br />
+               انضم لينا في الاستوديو عن طريق انك تضغط <strong>الانضمام الي تمرة </strong> انت مش هتبقي مجرد عضو انت هتبقي <strong>سبب اساسي في نجاح الاستوديو</strong>
             </p>
 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD4wNRB2wbZTw561svg-Xn6C5rEEk7MPSRpALLGTBxIDwurg/viewform">

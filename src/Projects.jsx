@@ -7,7 +7,7 @@ export default function Projects({ dark }) {
                 المشاريع البرمجية
             </h2>
             <div className='h-[60vh] content-center'>
-                <p className='text-center '>لا توجد مشاريع حتي الان</p>
+                <p className='text-center '>    مفيش اي مشاريع لغايط دلوقتي</p>
             </div>
            
         </section>
