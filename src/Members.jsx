@@ -2,27 +2,27 @@ import React from 'react';
 import Ahmed from './Images/Ahmed.png'
 import Asr from './Images/Asr.png'
 import Omar from './Images/Omar.png'
-const members = [
 
+const members = [
   {
     id: 2,
     name: 'عمر حاتم',
     task: 'مطور فرونت إند',
-    desc: ' بيشتغل على تطوير الواجهة وشكل الموقع ده',
+    desc: ' بيشتغل على تطوير الواجهة وشكل الموقع ده ومواقع خاصة بالستوديو',
     portf: 'https://dynamic-bienenstitch-8740f7.netlify.app/',
     img: Omar,
   },
-    {
+  {
     id: 1,
-    name: ' اسر اسلام',
-    task: ' مطور العاب و قائد ورسام' ,
-    desc: 'المدير و القائد ومطور العاب و المسؤول عن الخطة      .',
-    portf:'https://koeshg.netlify.app/',
+    name: 'اسر اسلام',
+    task: 'مطور ألعاب وقائد ورسام',
+    desc: 'المدير والقائد ومطور ألعاب والمسؤول عن الخطة.',
+    portf: 'https://koeshg.netlify.app/',
     img: Asr,
   },
   {
     id: 3,
-    name: 'احمد حاتم',
+    name: 'أحمد حاتم',
     task: 'مسؤول تسويق',
     desc: 'بيشتغل على نشر تمرة في كل مكان على الإنترنت.',
     img: Ahmed,
@@ -31,40 +31,65 @@ const members = [
 
 export default function Members({ dark }) {
   return (
-    <section id='members' className={`scroll-mt-24 w-full min-h-[70vh] bg-cover bg-center px-5 sm:px-10 md:px-20 py-10 sm:py-20 border-b-2 border-yellow-300 transition-colors duration-500 ${dark ? 'bg-red-950' : 'bg-white'}`}>
-      <h2 className={`${dark ? 'text-yellow-300' : 'text-red-600'} text-4xl mb-10 transition-colors duration-500`}>
-        اعضاء تمرة
+    <section
+      id='members'
+      className={`
+        scroll-mt-24 w-full min-h-[70vh] bg-cover bg-center px-5 sm:px-10 md:px-20 py-10 sm:py-20 
+        border-b-2 border-yellow-300 transition-colors duration-500 
+        ${dark ? 'bg-red-950' : 'bg-white'}
+      `}
+    >
+      <h2
+        className={`
+          ${dark ? 'text-yellow-300' : 'text-red-600'} 
+          text-4xl mb-10  font-bold transition-colors duration-500
+        `}
+      >
+        أعضاء تمرة
       </h2>
 
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-6">
         {members.map((member) => (
           <div
             key={member.id}
-            className={`rounded-2xl p-5 shadow-md transition-all duration-300 hover:translate-y-[-4px] hover:shadow-xl  ${dark ? 'bg-red-900 text-yellow-100' : 'bg-gray-100 text-gray-800'}`}
+            className={`
+              flex flex-col items-center rounded-2xl p-5 shadow-md w-full sm:w-[300px] 
+              transition-all duration-300 hover:translate-y-[-4px] hover:shadow-xl
+              ${dark ? 'bg-red-900 text-yellow-100' : 'bg-gray-100 text-gray-800'}
+            `}
           >
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full">
-              <img src={member.img} alt={member.name} className=" w-full h-full object-cover " />
+            <div className="w-20 h-20 rounded-full overflow-hidden bg-yellow-500 mb-4 ">
+              <img src={member.img} alt={member.name} className="object-cover object-top w-full h-full" />
+
             </div>
             <h3 className="text-xl font-bold text-center mb-1">{member.name}</h3>
             <p className="text-center font-medium mb-2">{member.task}</p>
             <p className="text-sm text-center opacity-80">{member.desc}</p>
-            
-        <a href={member.portf} className=''>
+
+            {member.portf ? (
+              <a
+                href={member.portf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
                 <button
-                className={`
-                  
+                  className={`
                     mt-5 w-full h-10 rounded-3xl font-semibold transition-all duration-300
                     ${dark
-                        ? 'bg-yellow-300 text-red-950 hover:bg-yellow-400 hover:text-red-900'
-                        : 'bg-red-600 text-white hover:bg-red-700 hover:text-yellow-200'
+                      ? 'bg-yellow-300 text-red-950 hover:bg-yellow-400 hover:text-red-900'
+                      : 'bg-red-600 text-white hover:bg-red-700 hover:text-yellow-200'
                     }
-                    ${member.portf ?  '' : 'bg-transparent hover:bg-transparent hover:text-red-950'}
-                    
-                `}
-            >
-                {member.portf ? 'البورتفوليو' : 'معندوش بورتفوليو'}
-            </button>
-        </a>
+                  `}
+                >
+                  البورتفوليو
+                </button>
+              </a>
+            ) : (
+              <p className="mt-5 text-center text-sm font-semibold opacity-70">
+                معندوش بورتفوليو
+              </p>
+            )}
           </div>
         ))}
       </div>
