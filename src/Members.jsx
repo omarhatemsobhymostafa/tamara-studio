@@ -42,7 +42,7 @@ export default function Members({ dark }) {
             key={member.id}
             className={`rounded-2xl p-5 shadow-md transition-all duration-300 hover:translate-y-[-4px] hover:shadow-xl  ${dark ? 'bg-red-900 text-yellow-100' : 'bg-gray-100 text-gray-800'}`}
           >
-            <div className="w-32 h-48 mx-auto mb-4">
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full">
               <img src={member.img} alt={member.name} className=" w-full h-full object-cover " />
             </div>
             <h3 className="text-xl font-bold text-center mb-1">{member.name}</h3>
