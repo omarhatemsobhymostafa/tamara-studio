@@ -5,11 +5,11 @@ import img3 from './Images/mqdefault_6s (3).webp'
 export default function Videos({ dark }) {
     return (
         <section id='videos' className={`w-full min-h-[70vh] bg-cover bg-center px-5 sm:px-10 md:px-20 py-10 sm:py-20 border-b-2 border-yellow-300 transition-colors duration-500 ${dark ? 'bg-red-950' : 'bg-white'}`}>
-            <h2 className={`${dark ? 'text-yellow-300' : 'text-red-600'} text-4xl mb-10 transition-colors duration-500`}>
+            <h2 className={`${dark ? 'text-yellow-300' : 'text-red-600'} text-4xl mb-10 transition-colors duration-500 ` }>
                 فيديوهتنا
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <a href="https://www.youtube.com/watch?v=aRockIWJyBo"  >
                     <div
@@ -74,8 +74,12 @@ export default function Videos({ dark }) {
                 </div>
             </a>
 
+            </div> */}
+            <div className='text-center content-center items-center h-full w-full min-h-[50vh]'>
+            <h2>غير متوفرة حاليا ...</h2>
+
             </div>
-            <a href="https://www.youtube.com/@tamarastudio-m2s" className='mt-5 text-red-600 text-xl text-left inline-block  w-full'>المزيد</a>
+        {/* <a href="https://www.youtube.com/@tamarastudio-m2s" className='mt-5 text-red-600 text-xl text-left inline-block  w-full'>المزيد</a> */}
         </section>
     );
 }

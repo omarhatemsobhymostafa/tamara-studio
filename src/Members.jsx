@@ -1,32 +1,25 @@
 import React from 'react';
-import Ahmed from './Images/Ahmed.png'
 import Asr from './Images/Asr.png'
 import Omar from './Images/Omar.png'
 
 const members = [
   {
     id: 2,
-    name: 'عمر حاتم',
+    name: '؟؟؟؟؟؟',
     task: 'مطور فرونت إند',
     desc: ' بيشتغل على تطوير الواجهة وشكل الموقع ده ومواقع خاصة بالستوديو',
-    portf: 'https://dynamic-bienenstitch-8740f7.netlify.app/',
+    portf: '',
     img: Omar,
   },
   {
     id: 1,
-    name: 'اسر اسلام',
+    name: '؟؟؟؟؟',
     task: 'مطور ألعاب وقائد ورسام',
     desc: 'المدير والقائد ومطور ألعاب والمسؤول عن الخطة.',
-    portf: 'https://koeshg.netlify.app/',
+    portf: '',
     img: Asr,
   },
-  {
-    id: 3,
-    name: 'أحمد حاتم',
-    task: 'مسؤول تسويق',
-    desc: 'بيشتغل على نشر تمرة في كل مكان على الإنترنت.',
-    img: Ahmed,
-  },
+
 ];
 
 export default function Members({ dark }) {
